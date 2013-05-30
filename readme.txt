@@ -31,6 +31,7 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 **ADVANCED Version Contains:**
 
 [Advanced Version Link](http://wordpress.techgasp.com/skype-master/)
+
 * Selectable Button Display
 * Skype Online User Status Button
 * Skype Call Me Button
