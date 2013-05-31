@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, online status, message, video chat
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv2 or later
 
 Skype Master is the Skype supreme plugin for any Wordpress powered website. Includes Show Online Status Button.
@@ -24,6 +24,7 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 **LITE Version Contains:**
 
+* Display or hide Widget Title
 * Skype Add Me Button
 * 2 Button Colors (skype blue and skype green)
 * Vertical or Horizontal Button Display
@@ -42,7 +43,8 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 * Skype Send Me a File
 * 2 Button Colors (skype blue and skype green)
 * Vertical or Horizontal Button Display
-* Shortcode Framework. Display buttons inside wordpress pages or posts.
+* Shortcode Framework. Display buttons inside wordpress pages or posts
+* Display or hide Wdget Title
 
 
 == Installation ==
@@ -88,6 +90,9 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 
 == Changelog ==
+
+= 2.1 =
+* Added option to Display or hide Widget Title
 
 = 2.0 =
 * Stable Release

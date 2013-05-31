@@ -18,7 +18,8 @@ class techgasp_skypemaster_widget extends WP_Widget {
 	function widget( $args, $instance ) {
 		extract( $args );
 		//Our variables from the widget settings.
-		$title = "Skype Master";
+		$name = "Skype Master";
+		$title = isset( $instance['title'] ) ? $instance['title'] :false;
 		$skype_username = $instance['skype_username'];
 		$show_skype_vertical = isset( $instance['show_skype_vertical'] ) ? $instance['show_skype_vertical'] :false;
 		$show_skype_blue = isset( $instance['show_skype_blue'] ) ? $instance['show_skype_blue'] :false;
@@ -27,7 +28,7 @@ class techgasp_skypemaster_widget extends WP_Widget {
 		
 		// Display the widget title
 	if ( $title )
-		echo $before_title . $title . $after_title;
+		echo $before_title . $name . $after_title;
 			//Display Buttons
 	if ( $show_skype_vertical ){
 			if ($show_skype_blue){
@@ -69,6 +70,7 @@ class techgasp_skypemaster_widget extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		//Strip tags from title and name to remove HTML
+		$instance['name'] = strip_tags( $new_instance['name'] );
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['skype_username'] = $new_instance['skype_username'];
 		$instance['show_skype_vertical'] = $new_instance['show_skype_vertical'];
@@ -78,10 +80,15 @@ class techgasp_skypemaster_widget extends WP_Widget {
 	}
 	function form( $instance ) {
 	//Set up some default widget settings.
-	$defaults = array( 'title' => __('Skype Master', 'skype master'), 'skype_username' => false, 'show_skype_vertical' => false, 'show_skype_blue' => false, 'show_skype_add' => false );
+	$defaults = array( 'name' => __('Skype Master', 'skype master'), 'title' => true, 'skype_username' => false, 'show_skype_vertical' => false, 'show_skype_blue' => false, 'show_skype_add' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
-		<b>Check the buttons to be displayed:</b>
+	<b>Check the buttons to be displayed:</b>
+	<p>
+	<input type="checkbox" <?php checked( (bool) $instance['title'], true ); ?> id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" />
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><b><?php _e('Display Widget Title', 'skype master'); ?></b></label></br>
+	</p>
+	<hr>
 	<p>
 	<label for="<?php echo $this->get_field_id( 'skype_username' ); ?>"><?php _e('Skype Username:', 'skype master'); ?></label></br>
 	<input id="<?php echo $this->get_field_id( 'skype_username' ); ?>" name="<?php echo $this->get_field_name( 'skype_username' ); ?>" value="<?php echo $instance['skype_username']; ?>" style="width:auto;" />
