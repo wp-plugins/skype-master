@@ -2,7 +2,7 @@
 /**
 Plugin Name: Skype Master
 Plugin URI: http://wordpress.techgasp.com/skype-master/
-Version: 2.1
+Version: 2.2
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: skype-master
@@ -32,7 +32,11 @@ define('TECHGASP_SKYPEMASTER_ID', 'skype-master-options');
 // DEFINE PLUGIN NICK
 define('TECHGASP_SKYPEMASTER_NICK', 'Skype Master');
 
+// HOOKO WIDGET
 require_once('techgasp-skypemaster-widget.php');
+
+// HOOK INVITATION
+
 
     class techgasp_skypemaster
     {
@@ -97,7 +101,7 @@ require_once('techgasp-skypemaster-widget.php');
 		*/
 		public static function content_with_quote($content)
 		{
-			$quote = '<p><blockquote>' . get_option('tsm_quote') . '</blockquote></p>';
+			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
 		
