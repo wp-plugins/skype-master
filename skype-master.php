@@ -2,7 +2,7 @@
 /**
 Plugin Name: Skype Master
 Plugin URI: http://wordpress.techgasp.com/skype-master/
-Version: 2.2
+Version: 4.0
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: skype-master
@@ -24,22 +24,23 @@ License: GPL2 or later
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-if(!class_exists('techgasp_skypemaster')) :
+
+if(!class_exists('skype_master')) :
 
 // DEFINE PLUGIN ID
-define('TECHGASP_SKYPEMASTER_ID', 'skype-master-options');
+define('SKYPE_MASTER_ID', 'skype-master');
 
 // DEFINE PLUGIN NICK
-define('TECHGASP_SKYPEMASTER_NICK', 'Skype Master');
+define('SKYPE_MASTER_NICK', 'Skype Master');
 
-// HOOKO WIDGET
-require_once('techgasp-skypemaster-widget.php');
+// HOOK WIDGET
+require_once('includes/skype-master-widget.php');
 
 // HOOK INVITATION
 
+// HOOK SHORTCODE
 
-    class techgasp_skypemaster
-    {
+	class skype_master{
 		/** function/method
 		* Usage: return absolute file path
 		* Arg(1): string
@@ -54,9 +55,9 @@ require_once('techgasp-skypemaster-widget.php');
 		* Arg(0): null
 		* Return: void
 		*/
-		public static function techgasp_skypemaster_register()
+		public static function skype_master_register()
 		{
-			register_setting(TECHGASP_SKYPEMASTER_ID.'_options', 'tsm_quote');
+			register_setting(SKYPE_MASTER_ID, 'tsm_quote');
 		}
 		/** function/method
 		* Usage: hooking (registering) the plugin menu
@@ -66,8 +67,8 @@ require_once('techgasp-skypemaster-widget.php');
 		public static function menu()
 		{
 			// Create menu tab
-			add_options_page(TECHGASP_SKYPEMASTER_NICK.' Plugin Options', TECHGASP_SKYPEMASTER_NICK, 'manage_options', TECHGASP_SKYPEMASTER_ID.'_options', array('techgasp_skypemaster', 'options_page'));
-			add_filter( 'plugin_action_links', array('techgasp_skypemaster', 'techgasp_skypemaster_link'), 10, 2 );
+			add_options_page(SKYPE_MASTER_NICK.' Plugin Options', SKYPE_MASTER_NICK, 'manage_options', SKYPE_MASTER_ID.'-admin', array('skype_master', 'options_page'));
+			add_filter( 'plugin_action_links', array('skype_master', 'skype_master_link'), 10, 2 );
 		}
 		/** function/method
 		* Usage: show options/settings form page
@@ -80,20 +81,20 @@ require_once('techgasp-skypemaster-widget.php');
 			{
 				wp_die( __('You do not have sufficient permissions to access this page.') );
 			}
-			$plugin_id = TECHGASP_SKYPEMASTER_ID;
+			$plugin_id = SKYPE_MASTER_ID;
 			// display options page
-			include(self::file_path('techgasp-skypemaster-admin.php'));
+			include(self::file_path('includes/skype-master-admin.php'));
 		}
 		/** function/method
-                * Usage: show options/settings form page
-                * Arg(0): null
-                * Return: void
-                */
-		 public static function techgasp_skypemaster_widget()
-                {
-                        // display widget page
-                        include(self::file_path('techgasp-skypemaster-widget.php'));
-                }
+		* Usage: show options/settings form page
+		* Arg(0): null
+		* Return: void
+		*/
+		 public static function skype_master_widget()
+		{
+			// display widget page
+			include(self::file_path('includes/skype-master-widget.php'));
+		}
 		/** function/method
 		* Usage: filtering the content
 		* Arg(1): string
@@ -104,23 +105,24 @@ require_once('techgasp-skypemaster-widget.php');
 			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
-		
 		// Add settings link on plugin page
-		public function techgasp_skypemaster_link($links, $file) {
-		static $this_plugin;
-		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
-		if ($file == $this_plugin){
-		$settings_link = '<a href="' . admin_url( 'options-general.php?page='.TECHGASP_SKYPEMASTER_ID).'_options' . '">' . __( 'Settings' ) . '</a>';
-		array_unshift($links, $settings_link);
-		}
+		public static function skype_master_link($links, $file) {
+			static $this_plugin;
+			if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
+			if ($file == $this_plugin){
+				$settings_link = '<a href="' . admin_url( 'options-general.php?page='.SKYPE_MASTER_ID).'-admin' . '">' . __( 'Settings' ) . '</a>';
+				array_unshift($links, $settings_link);
+			}
 		return $links;
 		}
+		// Advanced Updater
 	}
-		if ( is_admin() )
+	if ( is_admin() )
 		{
-		add_action('admin_init', array('techgasp_skypemaster', 'techgasp_skypemaster_register'));
-		add_action('admin_menu', array('techgasp_skypemaster', 'menu'));
+		add_action('admin_init', array('skype_master', 'skype_master_register'));
+		add_action('admin_menu', array('skype_master', 'menu'));
+		
 		}
-		add_filter('the_content', array('techgasp_skypemaster', 'content_with_quote'));
+	add_filter('the_content', array('skype_master', 'content_with_quote'));
 endif;
 ?>
