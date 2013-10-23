@@ -100,8 +100,8 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 5. Widget with only 2 Skype Buttons selected.
 6. Widget with all Skype Action Buttons, Offline Status. Color Skype Green. Horizontal Alignment.
 7. Widget with all Skype Action Buttons, Online Status. Color Skype Blue. Horizontal Alignment.
-8. Widget inside pages and posts. Shortcode framework implementation. Vertical Alignement.
-9. Widget inside pages and posts. Shortcode framework implementation. Only 5 Buttons selected. Horizontal Alignement.
+8. Widget inside pages and posts. Shortcode framework implementation. Vertical Alignment.
+9. Widget inside pages and posts. Shortcode framework implementation. Only 5 Buttons selected. Horizontal Alignment.
 
 
 == Changelog ==
@@ -142,7 +142,7 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 == Upgrade Notice ==
 
 = 4.0 =
-* IMPORTANT Upgrade to new TechGasp Plugin Frameworkk
+* IMPORTANT Upgrade to new TechGasp Plugin Framework
 
 = 2.0 =
 * IMPORTANT Upgrade to Stable release
