@@ -79,6 +79,7 @@ class skype_master_widget extends WP_Widget {
 	$defaults = array( 'name' => __('Skype Master', 'skype_master'), 'title' => true, 'skype_username' => false, 'show_skype_vertical' => false, 'show_skype_blue' => false, 'show_skype_add' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
+		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
@@ -157,16 +158,25 @@ class skype_master_widget extends WP_Widget {
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
+	<b>Shortcode Framework</b>
+	</p>
+	<div class="description">The shortcode framework allows you to insert Skype Master inside Pages & Posts without the need of extra plugins or gimmicks. Fast page load times and top SEO. Only available in advanced version.</div>
+	<br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
 	<b>Skype Master Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/skype-master/" target="_blank" title="Skype Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/skype-master-documentation/" target="_blank" title="Skype Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/skype-master/" target="_blank" title="Skype Master Wordpress">Advanced Version</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/skype-master/" target="_blank" title="Skype Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/skype-master-documentation/" target="_blank" title="Skype Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/skype-master/" target="_blank" title="Skype Master Wordpress">Adv. Version</a></p>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
-		<p>
-		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
-		&nbsp;
-		<b>Advanced Version Updater:</b>
-		</p>
-		<div class="description">The advanced version updater allows to automatically update your advanced plugin. Only available in advanced version.</div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Advanced Version Updater:</b>
+	</p>
+	<div class="description">The advanced version updater allows to automatically update your advanced plugin. Only available in advanced version.</div>
+	<br>
 	<?php
 	}
  }
