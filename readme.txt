@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, online status, message, video chat
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 4.3
+Stable tag: 4.3.5
 License: GPLv2 or later
 
 Skype Master is the Skype supreme plugin for any Wordpress powered website. Includes Show Online Status Button.
@@ -42,7 +42,7 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 * TechGasp Skype Widget:
 * Skype Status plus all 6 available skype action buttons
 
-* Selectable Button Display per Widget
+* Selectable Buttons Display per Widget
 * Skype Online User Status Button
 * Skype Call Me Button
 * Skype Chat with Me Button
@@ -51,8 +51,10 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 * Skype Leave me VoiceMail
 * Skype Send Me a File
 
-* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
-* Shortcodes contain horizontal and vertical display option to perfectly fit your pages and posts, look great at the end of each post
+* TechGasp Shortcode Framework v3:
+* Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
+* Individual Shortcode for each page or post, individual customized shortcode per page or post
+* Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
 * [Advanced Version Link](http://wordpress.techgasp.com/skype-master/)
 
 **ONLINE DEMO**
@@ -117,6 +119,16 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 
 == Changelog ==
+
+= 4.3.5 =
+* TechGasp Plugin Framework v3 Improvements and Upgrades
+* New Universal Shortcode Options:
+* Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page and post
+* Option to Automatically only show the shortcode in Posts, not Pages
+* Option to Automatically show the shortcode After the Title or After the Content
+* Code clean up and speed up
+* Fixed a couple of warnings
+* Improved Updater
 
 = 4.3 =
 * New TechGasp Plugin Framework
