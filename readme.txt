@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, online status, message, video chat
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 4.3.6
+Tested up to: 4.1.1
+Stable tag: 4.4.1.4
 License: GPLv2 or later
 
 Skype Master is the Skype supreme plugin for any Wordpress powered website. Includes Show Online Status Button.
@@ -34,14 +34,6 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 **ADVANCED Version Contains:**
 
 * Display, Hide or Change any Widget Title
-* Original Skype Widget:
-* Skype Status plus all 6 available skype action buttons
-* 2 Button Colours (skype blue and skype green)
-* Microsoft Skype Widget:
-* Skype Status plus all 6 available skype action buttons
-* TechGasp Skype Widget:
-* Skype Status plus all 6 available skype action buttons
-
 * Selectable Buttons Display per Widget
 * Skype Online User Status Button
 * Skype Call Me Button
@@ -50,6 +42,20 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 * Skype View My Profile Button
 * Skype Leave me VoiceMail
 * Skype Send Me a File
+
+* Original Skype Widget:
+* Skype Status plus all 6 available skype action buttons
+* 2 Button Colours (skype blue and skype green)
+
+* Microsoft Skype Widget:
+* Skype Status plus all 6 available skype action buttons
+
+* TechGasp Skype Widget:
+* Skype Status plus all 6 available skype action buttons
+
+* Skype Support Widget:
+* This specially design widget is perfect to provide online support to your customers or users.
+* Displays your online status via 2 selectable support buttons
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -107,18 +113,40 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 == Screenshots ==
 
-1. Skype Original Blue Buttons Widget with all Skype Action Buttons, Online Status. Color Skype Blue. Vertical Alignment.
-2. Skype Original Green Buttons Widget with all Skype Action Buttons, Offline Status. Color Skype Green. Vertical Alignment.
-3. Skype Original Blue Buttons Widget with all Skype Action Buttons, Busy Status. Color Skype Blue. Vertical Alignment.
-4. Skype Original Blue Buttons Widget with all Skype Action Buttons, Away Status. Color Skype Blue. Vertical Alignment.
-5. Skype Original Green Buttons Widget with only 2 Skype Buttons selected.
-6. Microsoft Buttons Widget
-7. TechGasp Buttons Widget
-8. Widget inside pages and posts. Shortcode framework implementation. Horizontal Alignment.
-9. Widget inside pages and posts. Shortcode framework implementation. Vertical Alignment.
+1. Skype Original Blue Buttons Widget + Skype Original Green Buttons Widget. All Skype Action Buttons. Vertical Alignment.
+2. Skype Original Green Buttons Widget with only 2 Skype Buttons selected.
+3. Microsoft Buttons Widget + TechGasp Buttons Widget
+4. Microsoft Buttons Widget + TechGasp Buttons Widget. With Skype Online Status.
+5. Skype Support Widget with all Skype Status Icons. Icon Set 1.
+6. Skype Support Widget with all Skype Status Icons. Icon Set 2.
+7. Widget inside pages and posts. Shortcode framework implementation. Horizontal Alignment.
+8. Widget inside pages and posts. Shortcode framework implementation. Vertical Alignment.
 
 
 == Changelog ==
+
+= 4.4.1.4 =
+* Getting all widget titles network ready
+* Adding Skype Master Support Widget
+
+= 4.4.1.3 =
+* Tweaking Updater
+
+= 4.4.1.2 =
+* Adding Network Warnings and help texts
+
+= 4.4.1.1 =
+* Fixing uninstall, plugin deletion on wordpress network and multi-sites
+
+= 4.4.1.0 =
+* Fixing Shortcodes
+* Fixing Widgets
+* General clean-up and speed boost
+
+= 4.4.0 =
+* Wordpress multi-site or wordpress network ready
+* New screenshots and images
+* Skype Buttons tweaked
 
 = 4.3.6 =
 * Added automatic deletion of site_transients

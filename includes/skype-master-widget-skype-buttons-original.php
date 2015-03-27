@@ -27,9 +27,17 @@ class skype_master_widget_original extends WP_Widget {
 		// Display the widget title
 	if ( $skype_title ){
 		if (empty ($skype_title_new)){
-		$skype_title_new = get_option('skype_master_name');
-		}
+			if(is_multisite()){
+			$skype_title_new = get_site_option('skype_master_name');
+			}
+			else{
+			$skype_title_new = get_option('skype_master_name');
+			}
 		echo $before_title . $skype_title_new . $after_title;
+		}
+		else{
+		echo $before_title . $skype_title_new . $after_title;
+		}
 	}
 	else{
 	}
@@ -82,7 +90,7 @@ class skype_master_widget_original extends WP_Widget {
 	}
 	function form( $instance ) {
 	//Set up some default widget settings.
-	$defaults = array( 'skype_title_new' => __('Skype Master', 'skype_master'), 'skype_title' => true, 'skype_title_new' => false, 'skype_username' => false, 'show_skype_vertical' => false, 'show_skype_blue' => false, 'show_skype_add' => true, );
+	$defaults = array( 'skype_title_new' => __('Skype Master', 'skype_master'), 'skype_title' => true, 'skype_title_new' => false, 'skype_username' => false, 'show_skype_vertical' => false, 'show_skype_blue' => false, 'show_skype_add' => true );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
 		<br>
@@ -125,46 +133,45 @@ class skype_master_widget_original extends WP_Widget {
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
-	<label for="<?php echo $this->get_field_id( 'show_skype_status' ); ?>"><b><?php _e('Display Skype Status Button', 'skype_master'); ?></b></label>
-	</p>
+	<label for="<?php echo $this->get_field_id( 'show_skype_status' ); ?>"><b><?php _e('Display Skype Status Button', 'skype_master'); ?></b></label></br>
 	<div class="description">Check Plugin Add-ons Page.</div>
+	</p>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
-	<label for="<?php echo $this->get_field_id( 'show_skype_call' ); ?>"><b><?php _e('Display Skype Call Me Button', 'skype_master'); ?></b></label>
-	</p>
+	<label for="<?php echo $this->get_field_id( 'show_skype_call' ); ?>"><b><?php _e('Display Skype Call Me Button', 'skype_master'); ?></b></label></br>
 	<div class="description">Check Plugin Add-ons Page.</div>
+	</p>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
-	<label for="<?php echo $this->get_field_id( 'show_skype_chat' ); ?>"><b><?php _e('Display Skype Chat with Button', 'skype_master'); ?></b></label>
-	</p>
+	<label for="<?php echo $this->get_field_id( 'show_skype_chat' ); ?>"><b><?php _e('Display Skype Chat with Button', 'skype_master'); ?></b></label></br>
 	<div class="description">Check Plugin Add-ons Page.</div>
+	</p>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_skype_add'], true ); ?> id="<?php echo $this->get_field_id( 'show_skype_add' ); ?>" name="<?php echo $this->get_field_name( 'show_skype_add' ); ?>" />
-	<label for="<?php echo $this->get_field_id( 'show_skype_add' ); ?>"><b><?php _e('Display Skype Add Me Button', 'skype_master'); ?></b></label>
+	<label for="<?php echo $this->get_field_id( 'show_skype_add' ); ?>"><b><?php _e('Display Skype Add Me Button', 'skype_master'); ?></b></label></br>
 	</p>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
-	<label for="<?php echo $this->get_field_id( 'show_skype_view' ); ?>"><b><?php _e('Display Skype View My Profile Button', 'skype_master'); ?></b></label>
-	</p>
+	<label for="<?php echo $this->get_field_id( 'show_skype_view' ); ?>"><b><?php _e('Display Skype View My Profile Button', 'skype_master'); ?></b></label></br>
 	<div class="description">Check Plugin Add-ons Page.</div>
+	</p>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
-	<label for="<?php echo $this->get_field_id( 'show_skype_voicemail' ); ?>"><b><?php _e('Display Skype Voice Mail Button', 'skype_master'); ?></b></label>
-	</p>
+	<label for="<?php echo $this->get_field_id( 'show_skype_voicemail' ); ?>"><b><?php _e('Display Skype Voice Mail Button', 'skype_master'); ?></b></label></br>
 	<div class="description">Check Plugin Add-ons Page.</div>
+	</p>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
-	<label for="<?php echo $this->get_field_id( 'show_skype_file' ); ?>"><b><?php _e('Display Skype Send Me a File Button', 'skype_master'); ?></b></label>
-	</p>
+	<label for="<?php echo $this->get_field_id( 'show_skype_file' ); ?>"><b><?php _e('Display Skype Send Me a File Button', 'skype_master'); ?></b></label></br>
 	<div class="description">Check Plugin Add-ons Page.</div>
-	</br>
+	</p>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
