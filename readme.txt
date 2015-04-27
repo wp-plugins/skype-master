@@ -1,9 +1,9 @@
 === Skype Master ===
-Contributors: Techgasp
+Contributors: TechGasp
 Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, online status, message, video chat
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 4.4.1.4
+Tested up to: 4.2
+Stable tag: 4.4.1.5
 License: GPLv2 or later
 
 Skype Master is the Skype supreme plugin for any Wordpress powered website. Includes Show Online Status Button.
@@ -124,6 +124,10 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 
 == Changelog ==
+
+= 4.4.1.5 =
+* Wordpress 4.2 ready
+* Fixing Warning
 
 = 4.4.1.4 =
 * Getting all widget titles network ready
