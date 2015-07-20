@@ -1,17 +1,17 @@
 === Skype Master ===
 Contributors: TechGasp
-Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, online status, message, video chat
+Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, message, video chat
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 4.4.1.5
+Stable tag: 4.4.2.0
 License: GPLv2 or later
 
-Skype Master is the Skype supreme plugin for any Wordpress powered website. Includes Show Online Status Button.
+Skype Master is the Skype supreme plugin for any Wordpress powered website.
 
 
 == Description ==
 
-Now that Microsoft bought skype and officially phased out live messenger, it was time to launch the ultimate skype communication tool for your wordpress. Skype Master allows you to display your Skype Online Status Button plus all 6 available skype actions, Call Me, Add Me, Chat with Me, View My Profile, Leave me Voicemail, Send Me a File.
+Now that Microsoft bought skype and officially phased out live messenger, it was time to launch the ultimate skype communication tool for your wordpress. Skype Master allows you to display all 6 Skype action buttons, Call Me, Add Me, Chat with Me, View My Profile, Leave me Voicemail, Send Me a File.
 
 Hold on, you don't need to show them all in the frontend, you can select each individual action to display in the front end. We packed this extension with the 2 famous skype colors (green or blue) to better suit your template.
 
@@ -28,7 +28,9 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 **LITE Version Contains:**
 
 * Display, Hide or Change any Widget Title
-* Original Skype Widget that includes only the Skype Add Me Button, plus:
+* 2 Button Colours (skype blue and skype green)
+* Original Skype Widget:
+* Skype Status plus all 6 available skype action buttons
 * 2 Button Colours (skype blue and skype green)
 
 **ADVANCED Version Contains:**
@@ -52,10 +54,6 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 * TechGasp Skype Widget:
 * Skype Status plus all 6 available skype action buttons
-
-* Skype Support Widget:
-* This specially design widget is perfect to provide online support to your customers or users.
-* Displays your online status via 2 selectable support buttons
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -116,14 +114,19 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 1. Skype Original Blue Buttons Widget + Skype Original Green Buttons Widget. All Skype Action Buttons. Vertical Alignment.
 2. Skype Original Green Buttons Widget with only 2 Skype Buttons selected.
 3. Microsoft Buttons Widget + TechGasp Buttons Widget
-4. Microsoft Buttons Widget + TechGasp Buttons Widget. With Skype Online Status.
-5. Skype Support Widget with all Skype Status Icons. Icon Set 1.
-6. Skype Support Widget with all Skype Status Icons. Icon Set 2.
+4. Microsoft Buttons Widget + TechGasp Buttons Widget.
+5. (discontinued) Skype Support Widget with all Skype Status Icons. Icon Set 1.
+6. (discontinued) Skype Support Widget with all Skype Status Icons. Icon Set 2.
 7. Widget inside pages and posts. Shortcode framework implementation. Horizontal Alignment.
 8. Widget inside pages and posts. Shortcode framework implementation. Vertical Alignment.
 
 
 == Changelog ==
+
+= 4.4.2.0 =
+* Includes several important fixes and speed-up's
+* New pre-installation flight
+* New text-domain because of updater
 
 = 4.4.1.5 =
 * Wordpress 4.2 ready
