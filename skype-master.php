@@ -2,7 +2,7 @@
 /**
 Plugin Name: Skype Master
 Plugin URI: http://wordpress.techgasp.com/skype-master/
-Version: 4.4.2.0
+Version: 4.4.2.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: skype-master
@@ -26,17 +26,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('skype_master')) :
 ///////DEFINE VERSION///////
-define( 'SKYPE_MASTER_VERSION', '4.4.2.0' );
+define( 'SKYPE_MASTER_VERSION', '4.4.2.4' );
 
-global $skype_master_version, $skype_master_name;
-$skype_master_version = "4.4.2.0"; //for other pages
+global $skype_master_name;
 $skype_master_name = "Skype Master"; //pretty name
 if( is_multisite() ) {
-update_site_option( 'skype_master_installed_version', $skype_master_version );
 update_site_option( 'skype_master_name', $skype_master_name );
 }
 else{
-update_option( 'skype_master_installed_version', $skype_master_version );
 update_option( 'skype_master_name', $skype_master_name );
 }
 
@@ -71,5 +68,7 @@ require_once( dirname( __FILE__ ) . '/includes/skype-master-admin.php');
 require_once( dirname( __FILE__ ) . '/includes/skype-master-admin-addons.php');
 // HOOK ADMIN WIDGETS
 require_once( dirname( __FILE__ ) . '/includes/skype-master-admin-widgets.php');
-// HOOK WIDGET SKYPE BUTTONS ORIGINAL
-require_once( dirname( __FILE__ ) . '/includes/skype-master-widget-skype-buttons-original.php');
+// HOOK WIDGET SKYPE BUTTONS ORIGINAL GREEN
+require_once( dirname( __FILE__ ) . '/includes/skype-master-widget-skype-buttons-original-green.php');
+// HOOK WIDGET SKYPE BUTTONS ORIGINAL BLUE
+require_once( dirname( __FILE__ ) . '/includes/skype-master-widget-skype-buttons-original-blue.php');

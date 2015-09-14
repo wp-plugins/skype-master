@@ -2,8 +2,8 @@
 Contributors: TechGasp
 Tags: wordpress, techgasp, plugin, widget, skype, msn, chat, talk, messaging, message, video chat
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 4.4.2.0
+Tested up to: 4.3
+Stable tag: 4.4.2.4
 License: GPLv2 or later
 
 Skype Master is the Skype supreme plugin for any Wordpress powered website.
@@ -28,16 +28,19 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 **LITE Version Contains:**
 
 * Display, Hide or Change any Widget Title
-* 2 Button Colours (skype blue and skype green)
-* Original Skype Widget:
-* Skype Status plus all 6 available skype action buttons
-* 2 Button Colours (skype blue and skype green)
+
+* Original Blue Skype Widget:
+* Skype Original Blue Buttons Scheme
+* 6 available skype action buttons
+
+* Original Green Skype Widget:
+* Skype Original Green Buttons
+* 6 available skype action buttons Scheme
 
 **ADVANCED Version Contains:**
 
 * Display, Hide or Change any Widget Title
 * Selectable Buttons Display per Widget
-* Skype Online User Status Button
 * Skype Call Me Button
 * Skype Chat with Me Button
 * Skype Add Me Button
@@ -45,15 +48,21 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 * Skype Leave me VoiceMail
 * Skype Send Me a File
 
-* Original Skype Widget:
-* Skype Status plus all 6 available skype action buttons
-* 2 Button Colours (skype blue and skype green)
+* Original Blue Skype Widget:
+* Skype Original Blue Buttons Scheme
+* 6 available skype action buttons
+
+* Original Green Skype Widget:
+* Skype Original Green Buttons
+* 6 available skype action buttons Scheme
 
 * Microsoft Skype Widget:
-* Skype Status plus all 6 available skype action buttons
+* Microsoft Skype Buttons Scheme
+* 6 available skype action buttons
 
 * TechGasp Skype Widget:
-* Skype Status plus all 6 available skype action buttons
+* TechGasp Skype Buttons Scheme
+* 6 available skype action buttons
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -122,6 +131,21 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 
 == Changelog ==
+
+= 4.4.2.4 =
+* Adding https support for original skype buttons
+* Adding 2 new widgtes
+* Adding images
+
+= 4.4.2.3 =
+* Replacing WP_WIGDET with __contruct
+
+= 4.4.2.2 =
+* Wordpress 4.3
+
+= 4.4.2.1 =
+* Wordpress 4.2.3
+* Removing name global
 
 = 4.4.2.0 =
 * Includes several important fixes and speed-up's
