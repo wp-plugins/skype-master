@@ -2,7 +2,7 @@
 /**
 Plugin Name: Skype Master
 Plugin URI: http://wordpress.techgasp.com/skype-master/
-Version: 4.4.2.4
+Version: 4.4.2.5
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: skype-master
@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('skype_master')) :
 ///////DEFINE VERSION///////
-define( 'SKYPE_MASTER_VERSION', '4.4.2.4' );
+define( 'SKYPE_MASTER_VERSION', '4.4.2.5' );
 
 global $skype_master_name;
 $skype_master_name = "Skype Master"; //pretty name
